@@ -1,0 +1,71 @@
+README ________________________________________________________________________
+_______________________________________________________________________________
+
+kalman.py _____________________________________________________________________
+
+Contains the implementation of Kalman Filter and API functions useful for
+running the filter easily like kalman_init_line(), pdr(), pdr_with_rtt(), etc.
+_______________________________________________________________________________
+
+rtt.py ________________________________________________________________________
+
+Contains code for simulating RTT with Gaussian Noise and function to find
+coordinate if range and estimated location is given by projecting point onto
+circle.
+_______________________________________________________________________________
+
+step_len_error.py _____________________________________________________________
+
+Finds bias and variance in step length and step detect.
+
+How to run: 'python3 step_len_error.py' in terminal
+
+Output:
+	Errors in each step length calculated
+	Mean: x.xxx
+	Std: x.xxx
+	<Shows CDF-PDF plot>
+
+	Error in step length combined with step detection
+	Mean: x.xxx
+	Std: x.xxx
+	<Shows CDF-PDF plot>
+_______________________________________________________________________________
+
+orientation_error.py __________________________________________________________
+
+Finds bias and variance in orientation.
+
+How to run: 'python3 orientation_error.py' in terminal
+
+Output:
+	Mean: x.xxx
+	Std: x.xxx
+_______________________________________________________________________________
+
+simulate.py ___________________________________________________________________
+
+Contains code related to simulating walking on line and circle with functions
+sim_line() and sim_circle().
+_______________________________________________________________________________
+
+localization_error.py _________________________________________________________
+
+Contains code for post analysis using analyse_line() and analyse_circle().
+Calls the walking simulation function.
+
+How to run: 'python3 localization_error.py' in terminal
+
+Output:
+	Line Simulation
+	Mean: x.xxx
+	Max: x.xxx
+	<Shows scatter plot>
+	
+	Circle Simulation
+	Mean: x.xxx
+	Max: x.xxx
+	<Shows scatter plot>
+_______________________________________________________________________________
+_______________________________________________________________________________	
+
